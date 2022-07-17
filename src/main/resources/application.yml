@@ -1,0 +1,5 @@
+aws:
+  s3:
+    bucketName: bucket-64dc32f6-811d-40f9-8370-9798e963d0a7
+    stringObjectKey: string-691cdf23-88da-4d99-8569-320e93061278
+    fileObjectKey: file-f347f775-c9a0-4a19-a2e7-6e2cb5eb54dc

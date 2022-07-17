@@ -1,0 +1,25 @@
+plugins {
+	id 'org.springframework.boot' version "$springBootVersion"
+	id 'io.spring.dependency-management' version "$springDependencyManagementVersion"
+	id 'java'
+}
+
+group = 'com.alexander'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = JavaVersion.VERSION_17
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation "org.springframework.boot:spring-boot-starter:$springBootVersion"
+	implementation "com.amazonaws:aws-java-sdk:$awsJavaSdkVersion"
+	compileOnly "org.projectlombok:lombok:$lombokVersion"
+	annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+	testImplementation "org.springframework.boot:spring-boot-starter-test:$springBootVersion"
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
